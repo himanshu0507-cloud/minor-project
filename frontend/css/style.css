@@ -1,0 +1,103 @@
+/* Smart Fertilizer Recommendation System - Modern Styling */
+
+:root {
+  --primary-green: #15803d;
+  --primary-green-dark: #166534;
+  --accent-gold: #ca8a04;
+  --leaf-tint: #f0fdf4;
+  --bg-gradient: linear-gradient(135deg, #f0fdf4 0%, #ecfdf5 50%, #fefce8 100%);
+}
+
+body {
+  background: var(--bg-gradient);
+  min-height: 100vh;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  color: #1f2937;
+}
+
+h1, h2, h3, .font-display {
+  font-family: 'Poppins', system-ui, sans-serif;
+}
+
+/* Card Glow & Glassmorphism */
+.glass-card {
+  background: rgba(255, 255, 255, 0.96);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(22, 163, 74, 0.15);
+  box-shadow: 0 10px 25px -5px rgba(22, 101, 52, 0.08), 0 8px 10px -6px rgba(22, 101, 52, 0.04);
+}
+
+.glass-header {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(22, 163, 74, 0.15);
+}
+
+/* Nutrient Meter Bar */
+.nutrient-bar {
+  transition: width 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Status Badges */
+.badge-pending {
+  background-color: #fef3c7;
+  color: #92400e;
+  border: 1px solid #fde68a;
+}
+
+.badge-approved {
+  background-color: #dbeafe;
+  color: #1e40af;
+  border: 1px solid #bfdbfe;
+}
+
+.badge-collected {
+  background-color: #e0e7ff;
+  color: #3730a3;
+  border: 1px solid #c7d2fe;
+}
+
+.badge-testing {
+  background-color: #f3e8ff;
+  color: #6b21a8;
+  border: 1px solid #e9d5ff;
+}
+
+.badge-completed {
+  background-color: #dcfce7;
+  color: #166534;
+  border: 1px solid #bbf7d0;
+}
+
+.badge-rejected {
+  background-color: #fee2e2;
+  color: #991b1b;
+  border: 1px solid #fecaca;
+}
+
+/* Custom Button Hover Effects */
+.btn-agri {
+  background: linear-gradient(135deg, #15803d 0%, #166534 100%);
+  color: white;
+  transition: all 0.2s ease-in-out;
+}
+
+.btn-agri:hover {
+  background: linear-gradient(135deg, #166534 0%, #14532d 100%);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(21, 128, 61, 0.3);
+}
+
+/* Mobile & Print Optimizations */
+@media print {
+  body {
+    background: white;
+  }
+  header, nav, .no-print {
+    display: none !important;
+  }
+  .print-only-card {
+    border: 1px solid #ddd;
+    box-shadow: none;
+  }
+}

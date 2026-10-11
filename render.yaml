@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: smart-fertilizer-system
+    runtime: python
+    buildCommand: "pip install -r backend/requirements.txt && pip install gunicorn && python ml/train_model.py"
+    startCommand: "gunicorn backend.app:app"
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11.9
+      - key: PORT
+        value: 10000
