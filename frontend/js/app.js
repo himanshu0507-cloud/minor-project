@@ -1445,7 +1445,7 @@ function App() {
       <footer className="glass-header border-t border-agri-200 mt-12 py-6 text-center text-xs text-gray-600">
         <div className="max-w-7xl mx-auto px-4 flex flex-col sm:flex-row items-center justify-between gap-3">
           <div className="flex items-center gap-2 font-bold text-agri-900">
-            <span>🌱 Smart Fertilizer Recommendation System</span>
+            <span>🌱 Embedded Soil Nutrient Analyzer and GUI-Based Fertilizer Recommender</span>
           </div>
           <p className="text-gray-500 text-[11px]">
             Powered by Scikit-Learn Random Forest Classifier & Agricultural Science. Made for Indian Farmers.
