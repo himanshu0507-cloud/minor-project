@@ -5,7 +5,7 @@
 
 window.I18N_DATA = {
   en: {
-    app_title: "Smart Fertilizer Recommendation System",
+    app_title: "Embedded Soil Nutrient Analyzer and GUI-Based Fertilizer Recommender",
     app_tagline: "AI-Powered Agronomy Advice & Soil Health Care for Modern Farmers",
     nav_home: "Fertilizer Predictor",
     nav_book: "Book Soil Test",
